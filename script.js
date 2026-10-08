@@ -25,8 +25,8 @@ if (menuToggle && navLinks) {
 // POSTGRESQL APPLICATION FORM
 // ==========================================
 
-const API_URL =
-    "http://localhost:3000/api/applications";
+
+   const API_URL = "/.netlify/functions/applications";
 
 const carrierForm =
     document.getElementById("carrierForm");

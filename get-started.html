@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Elite Dispatchers | Get Started</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        Elite <span>Dispatchers</span>
+    </a>
+
+    <nav>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="get-started.html"
+                   class="nav-button active">
+                    Get Started
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+<!-- PAGE HERO -->
+
+<section class="page-hero">
+
+    <div class="page-hero-content">
+
+        <div class="page-label">
+            Get Started
+        </div>
+
+        <h1>
+            Let's Get Your Truck Moving
+        </h1>
+
+        <p>
+            Tell us a little about yourself and your operation.
+            Our team will get in touch with you.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FORM -->
+
+<section class="section">
+
+    <div class="form-wrapper">
+
+        <h2>
+            Carrier Information
+        </h2>
+
+        <p>
+            Complete the form below and our dispatch team
+            will contact you.
+        </p>
+
+
+        <form id ="carrierForm">
+
+            <div class="form-grid">
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="firstName">
+                        First Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="Your first name"
+                        required>
+
+                </div>
+
+
+                <!-- LAST NAME -->
+
+                <div class="form-group">
+
+                    <label for="lastName">
+                        Last Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Your last name"
+                        required>
+
+                </div>
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="(000) 000-0000"
+                        required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required>
+
+                </div>
+
+
+                <!-- COMPANY -->
+
+                <div class="form-group">
+
+                    <label for="company">
+                        Company Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        placeholder="Your company name">
+
+                </div>
+
+
+                <!-- TRUCK TYPE -->
+
+                <div class="form-group">
+
+                    <label for="truck">
+                        Equipment Type
+                    </label>
+
+                    <select id="truck" name="truck">
+
+                        <option value="">
+                            Select equipment
+                        </option>
+
+                        <option value="dry-van">
+                            Dry Van
+                        </option>
+
+                        <option value="reefer">
+                            Reefer
+                        </option>
+
+                        <option value="flatbed">
+                            Flatbed
+                        </option>
+
+                        <option value="power-only">
+                            Power Only
+                        </option>
+
+                        <option value="other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- TRUCK COUNT -->
+
+                <div class="form-group">
+
+                    <label for="trucks">
+                        Number of Trucks
+                    </label>
+
+                    <select id="trucks" name="trucks">
+
+                        <option value="">
+                            Select
+                        </option>
+
+                        <option value="1">
+                            1 Truck
+                        </option>
+
+                        <option value="2-5">
+                            2–5 Trucks
+                        </option>
+
+                        <option value="6-10">
+                            6–10 Trucks
+                        </option>
+
+                        <option value="11+">
+                            11+ Trucks
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- MC -->
+
+                <div class="form-group">
+
+                    <label for="mc">
+                        MC / DOT Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="mc"
+                        name="mc"
+                        placeholder="MC / DOT number">
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group full">
+
+                    <label for="message">
+                        Tell Us About Your Operation
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Tell us about your equipment, preferred lanes, and anything else we should know."></textarea>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-submit">
+
+                <button
+                     type="submit"
+                     id="submitButton"
+                    class="btn btn-primary">
+
+                     Submit Request
+
+                </button>
+                <div id="formMessage"></div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+    <h2>
+        Have Questions?
+    </h2>
+
+    <p>
+        We're ready to talk about your operation and
+        how we can help.
+    </p>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>
+                Elite Dispatchers
+            </h3>
+
+            <p>
+                Professional dispatch solutions designed
+                around your trucking business.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h4>
+                Navigation
+            </h4>
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="get-started.html">Get Started</a>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h4>
+                Services
+            </h4>
+
+            <a href="services.html">Load Booking</a>
+            <a href="services.html">Rate Negotiation</a>
+            <a href="services.html">Route Planning</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Elite Dispatchers. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
